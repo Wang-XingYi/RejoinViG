@@ -26,10 +26,10 @@ pip install -r requirements.txt
 #### 2. Dataset division
 ./data/05_divide_dataset.py: Divide the dataset into training, test, and validation sets
 
-./data/10_resize_train_val_test_imgs.py: Resize all images in the dataset (Train, Test, and validation) to 224×224 size.
+./data/10_resize_train_val_test_imgs.py: Resize all images in the dataset (train, test, and validation) to 224×224 size.
 
 #### 3. Generate the txt file for the dataset
-./data/06_create_train_val_not_rejoin_txt.py: Generate unrejoinable data for the training and validation set. 
+./data/06_create_train_val_not_rejoin_txt.py: Generate unrejoinable data for the train and validation set. 
 
 ./data/07_train_val_txt.py: Generate txt files for train and validation set
 
