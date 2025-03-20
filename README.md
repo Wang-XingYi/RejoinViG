@@ -14,6 +14,7 @@ conda install pytorch==2.1.1 torchvision==0.16.1
 pip install -r requirements.txt
 ```
 ### Synthetic Dataset
+![image](https://github.com/Wang-XingYi/RejoinViG/blob/main/Images/synthetic_dataset.pdf)
 #### 1. Generate fragment images
 ```
 ./data/01_fragImge.py: Through horizontal and vertical split curves, the bone stick images are divided into fragment images corresponding to top-bottom, bottom-top, left-right, and right-left rejoining.
