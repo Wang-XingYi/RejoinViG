@@ -37,6 +37,27 @@ pip install -r requirements.txt
 
 ./data/09_creat_test_full_txt.py: Generate txt files for test set
 
+#### 4. Dataset Structure
+```
+│data/
+├──Train/
+│  ├── 00001_1.bmp
+│  ├── 00001_2.bmp
+│  ├── ......
+├──Val/
+│  ├── 00048_1.bmp
+│  ├── 00048_2.bmp
+│  ├── ......
+├──Test/
+│  ├── 00002_1.bmp
+│  ├── 00002_2.bmp
+│  ├── ......
+├──Train.txt
+├──Val.txt
+├──Test_full.txt
+```
+
+
 ### Train RejoinViG:
 ```
 python main.py
