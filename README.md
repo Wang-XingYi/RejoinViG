@@ -25,27 +25,27 @@ pip install -r requirements.txt
 ├──03_remove_small_part_img.py
 │Some fragments obtained after horizontal splitting have very short matching edges. Images with such short edges should not be used for top-bottom rejoining, so we need to remove them.
 ├──04_delet_small_dataset.py
-│Remove records from the generated rejoinable txt document that contain images with too short matching edges (for both top-bottom and bottom-top rejoining). Additionally, some segmented fragments have discontinuous matching edges, and such images should not appear in the rejoinable txt file.
+│Remove records from the generated rejoinable txt document that contain images with too short matching edges (for both top-bottom and bottom-top rejoining). │Additionally, some segmented fragments have discontinuous matching edges, and such images should not appear in the rejoinable txt file.
 ```
 #### 2. Dataset division
 ```
 │data/
 ├──05_divide_dataset.py
-Divide the dataset into training, test, and validation sets
+│Divide the dataset into training, test, and validation sets
 ├──10_resize_train_val_test_imgs.py
-Resize all images in the dataset (train, test, and validation) to 224×224 size.
+│Resize all images in the dataset (train, test, and validation) to 224×224 size.
 ```
 #### 3. Generate the txt file for the dataset
 ```
 │data/
 ├──06_create_train_val_not_rejoin_txt.py
-Generate unrejoinable data for the train and validation set. 
+│Generate unrejoinable data for the train and validation set. 
 ├──07_train_val_txt.py
-Generate txt files for train and validation set
+│Generate txt files for train and validation set
 ├──08_create_test_not_rejoin_full_txt.py
-Generate unrejoinable data for the test set
+│Generate unrejoinable data for the test set
 ├──09_creat_test_full_txt.py
-Generate txt files for test set
+│Generate txt files for test set
 ```
 
 #### 4. Dataset Structure
