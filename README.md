@@ -75,15 +75,15 @@ python main.py
 ```
 
 ### Test RejoinViG:
-#### 1. Test
+- Test
 ```
 python results_evaluate.py
 ```
-#### 2. Calculate Top-K accuracy
+- Calculate Top-K accuracy
 ```
 python results_evaluate.py
 ```
-#### 3. Calculate parameters and MACs
+-  Calculate parameters and MACs
 ```
 MAC_params.py
 ```
