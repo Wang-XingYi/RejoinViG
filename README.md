@@ -79,9 +79,12 @@ python main.py
 ```
 python results_evaluate.py
 ```
-#### 2. Get Top-K accuracy
+#### 2. Calculate Top-K accuracy
 ```
 python results_evaluate.py
 ```
-
+#### 3. Calculate parameters and MACs
+```
+MAC_params.py
+```
 
