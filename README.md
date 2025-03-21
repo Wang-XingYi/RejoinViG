@@ -62,7 +62,7 @@ python main.py
 ```
 
 ### Test RejoinViG:
-#### 1.Test
+#### 1. Test
 ```
 python results_evaluate.py
 ```
