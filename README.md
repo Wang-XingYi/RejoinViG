@@ -29,20 +29,22 @@ Remove records from the generated rejoinable txt document that contain images wi
 ```
 #### 2. Dataset division
 ```
-./data/05_divide_dataset.py
+│data/
+├──05_divide_dataset.py
 Divide the dataset into training, test, and validation sets
-./data/10_resize_train_val_test_imgs.py
+├──10_resize_train_val_test_imgs.py
 Resize all images in the dataset (train, test, and validation) to 224×224 size.
 ```
 #### 3. Generate the txt file for the dataset
 ```
-./data/06_create_train_val_not_rejoin_txt.py
+│data/
+├──06_create_train_val_not_rejoin_txt.py
 Generate unrejoinable data for the train and validation set. 
-./data/07_train_val_txt.py
+├──07_train_val_txt.py
 Generate txt files for train and validation set
-./data/08_create_test_not_rejoin_full_txt.py
+├──08_create_test_not_rejoin_full_txt.py
 Generate unrejoinable data for the test set
-./data/09_creat_test_full_txt.py
+├──09_creat_test_full_txt.py
 Generate txt files for test set
 ```
 
