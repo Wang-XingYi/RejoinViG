@@ -1,4 +1,4 @@
-## RejoinViG
+# RejoinViG
 
 # Overview
 This repository contains the source code for Reassembling the Scattered Civilization: An Efficient Contour, Script, and Texture-Aware Rejoining of Fragment Images from Ancient Bone Stick
