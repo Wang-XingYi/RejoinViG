@@ -17,10 +17,14 @@ pip install -r requirements.txt
 ![image](https://github.com/Wang-XingYi/RejoinViG/blob/main/Images/synthetic_dataset.jpg)
 #### 1. Generate fragment images
 ```
-./data/01_fragImge.py: Through horizontal and vertical split curves, the bone stick images are divided into fragment images corresponding to top-bottom, bottom-top, left-right, and right-left rejoining.
-./data/02_dele_background.py: Crop the segmented bone sticks, resizing the 1200×1170 image to 800×800 to remove a significant amount of background information.
-./data/03_remove_small_part_img.py: Some fragments obtained after horizontal splitting have very short matching edges. Images with such short edges should not be used for top-bottom rejoining, so we need to remove them.
-./data/04_delet_small_dataset.py: Remove records from the generated rejoinable txt document that contain images with too short matching edges (for both top-bottom and bottom-top rejoining). Additionally, some segmented fragments have discontinuous matching edges, and such images should not appear in the rejoinable txt file.
+./data/01_fragImge.py
+Through horizontal and vertical split curves, the bone stick images are divided into fragment images corresponding to top-bottom, bottom-top, left-right, and right-left rejoining.
+./data/02_dele_background.py
+Crop the segmented bone sticks, resizing the 1200×1170 image to 800×800 to remove a significant amount of background information.
+./data/03_remove_small_part_img.py
+Some fragments obtained after horizontal splitting have very short matching edges. Images with such short edges should not be used for top-bottom rejoining, so we need to remove them.
+./data/04_delet_small_dataset.py
+Remove records from the generated rejoinable txt document that contain images with too short matching edges (for both top-bottom and bottom-top rejoining). Additionally, some segmented fragments have discontinuous matching edges, and such images should not appear in the rejoinable txt file.
 ```
 #### 2. Dataset division
 ```
