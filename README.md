@@ -15,7 +15,7 @@ pip install -r requirements.txt
 ```
 ### Synthetic Dataset
 ![image](https://github.com/Wang-XingYi/RejoinViG/blob/main/Images/synthetic_dataset.jpg)
-#### 1. Generate fragment images
+-  Generate fragment images
 ```
 │data/
 ├──01_fragImge.py
@@ -27,7 +27,7 @@ pip install -r requirements.txt
 ├──04_delet_small_dataset.py
 │Remove records from the generated rejoinable txt document that contain images with too short matching edges (for both top-bottom and bottom-top rejoining). │Additionally, some segmented fragments have discontinuous matching edges, and such images should not appear in the rejoinable txt file.
 ```
-#### 2. Dataset division
+- Dataset division
 ```
 │data/
 ├──05_divide_dataset.py
@@ -35,7 +35,7 @@ pip install -r requirements.txt
 ├──10_resize_train_val_test_imgs.py
 │Resize all images in the dataset (train, test, and validation) to 224×224 size.
 ```
-#### 3. Generate the txt file for the dataset
+- Generate the txt file for the dataset
 ```
 │data/
 ├──06_create_train_val_not_rejoin_txt.py
@@ -48,7 +48,7 @@ pip install -r requirements.txt
 │Generate txt files for test set
 ```
 
-#### 4. Dataset Structure
+- Dataset Structure
 ```
 │data/
 ├──Train/
