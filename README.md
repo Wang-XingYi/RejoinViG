@@ -62,10 +62,13 @@ python main.py
 ```
 
 ### Test RejoinViG:
+#### 1.Test
 ```
-python test.py
 python results_evaluate.py
 ```
-
+#### 2. Get Top-K accuracy
+```
+python results_evaluate.py
+```
 
 
