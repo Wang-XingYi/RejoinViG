@@ -14,7 +14,7 @@ conda install pytorch==2.1.1 torchvision==0.16.1
 ```
 pip install -r requirements.txt
 ```
-### Synthetic Dataset
+### Dataset Creation
 ![image](https://github.com/Wang-XingYi/RejoinViG/blob/main/Images/synthetic_dataset.jpg)
 -  Generate fragment images
 ```
