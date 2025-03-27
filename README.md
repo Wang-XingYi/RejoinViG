@@ -7,7 +7,7 @@ This repository contains the source code for Reassembling Precious Ancient Artif
 # Usage
 
 ## Installation 
-
+- Python 3.10.13
 ```
 conda install pytorch==2.1.1 torchvision==0.16.1
 ```
