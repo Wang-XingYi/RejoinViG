@@ -1,8 +1,8 @@
 # RejoinViG
 
 # Overview
-![image](https://github.com/Wang-XingYi/RejoinViG/blob/main/Images/network.jpg)
 This repository contains the source code for Reassembling Precious Ancient Artifacts: Efficiently Rejoin Massive Fragment Images of Ancient Bone Sticks by Contour, Script, and Texture
+![image](https://github.com/Wang-XingYi/RejoinViG/blob/main/Images/network.jpg)
 
 # Usage
 
