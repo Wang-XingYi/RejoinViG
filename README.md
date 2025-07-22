@@ -47,7 +47,7 @@ MAC_params.py
 ├──03_remove_small_part_img.py
 │Some fragments obtained after horizontal splitting have very short matching edges. Images with such short edges should not be used for top-bottom rejoining, so we need to remove them.
 ├──04_delet_small_dataset.py
-│Remove records from the generated rejoinable txt document that contain images with too short matching edges (for both top-bottom and bottom-top rejoining). │Additionally, some segmented fragments have discontinuous matching edges, and such images should not appear in the rejoinable txt file.
+│Remove records from the generated rejoinable txt document that contain images with too short matching edges (for both top-bottom and bottom-top rejoining).
 ```
 - Dataset division
 ```
