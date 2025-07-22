@@ -1,7 +1,7 @@
 # RejoinViG
 
 # Overview
-This repository contains the source code for Reassembling Precious Ancient Artifacts: Efficiently Rejoin Massive Fragment Images of Ancient Bone Sticks by Contour, Script, and Texture
+This repository contains the source code forRejoining Precious Artifacts: Efficiently Bone Stick Rejoining Based Massive Fragment Images by Contour, Script, and Texture
 ![image](https://github.com/Wang-XingYi/RejoinViG/blob/main/Images/network.jpg)
 
 # Usage
@@ -14,9 +14,26 @@ conda install pytorch==2.1.1 torchvision==0.16.1
 ```
 pip install -r requirements.txt
 ```
+
+### Train RejoinViG:
+```
+python main.py
+```
+
+### Test RejoinViG:
+- Test
+```
+python results_evaluate.py
+```
+- Calculate Top-K accuracy
+```
+python results_evaluate.py
+```
+-  Calculate parameters and MACs
+```
+MAC_params.py
+```
 ### Dataset Creation
-![image](https://github.com/Wang-XingYi/RejoinViG/blob/main/Images/synthetic_dataset.jpg)
--  Generate fragment images
 ```
 │data/
 ├──01_fragImge.py
@@ -67,25 +84,5 @@ pip install -r requirements.txt
 ├──Train.txt
 ├──Val.txt
 ├──Test_full.txt
-```
-
-
-### Train RejoinViG:
-```
-python main.py
-```
-
-### Test RejoinViG:
-- Test
-```
-python results_evaluate.py
-```
-- Calculate Top-K accuracy
-```
-python results_evaluate.py
-```
--  Calculate parameters and MACs
-```
-MAC_params.py
 ```
 
