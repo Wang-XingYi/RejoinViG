@@ -2,7 +2,7 @@ from collections import defaultdict
 
 file = r'11_RejoinViG-top10.txt'
 
-# -------------------- 1. 读取数据 --------------------
+# -------------------- 1. Read data --------------------
 edges = []
 with open('../log/'+file, "r") as f:
     for line in f:
@@ -12,7 +12,7 @@ with open('../log/'+file, "r") as f:
         edges.append((src, tgt, int(pre_class)))
 edges_set = set(edges)
 
-# -------------------- 2. 构建图结构 --------------------
+# -------------------- 2. Build graph structure --------------------
 filter_map = defaultdict(list)
 for src, tgt, pre_class in edges:
     if pre_class == 1 or pre_class == 3:
@@ -22,7 +22,7 @@ for src, tgt, pre_class in edges:
     if (tgt, src, target_class) in edges:
         filter_map[src].append((tgt, pre_class))
 
-# -------------------- 3. DFS，只在形成闭环时保存路径 --------------------
+# -------------------- 3. DFS: Only save paths when a cycle is formed --------------------
 def dfs_all_paths_unique_class(filter_map, current, start, visited, used_classes, current_path, all_paths):
     visited.append(current)
 
@@ -44,11 +44,10 @@ def dfs_all_paths_unique_class(filter_map, current, start, visited, used_classes
                     continue
         if target in visited:
             if target == start and len(current_path) > 0:
-                # 闭环成立，只保存当前路径+这条闭环边
+                # A valid loop is found; only save the current path with the closing edge
                 all_paths.append(current_path + [(current, target, pre_class)])
             continue
 
-        # 继续递归（状态隔离）
         new_path = current_path + [(current, target, pre_class)]
         new_visited = visited.copy()
         new_used_classes = used_classes.copy()
@@ -64,7 +63,7 @@ def dfs_all_paths_unique_class(filter_map, current, start, visited, used_classes
             all_paths
         )
 
-# -------------------- 4. 主遍历逻辑 --------------------
+# -------------------- 4. Main traversal logic --------------------
 all_paths = []
 
 for source in filter_map.keys():
@@ -79,18 +78,18 @@ for source in filter_map.keys():
     )
 
 num = 0
-saved_path_sets = set()  # 用于记录已保存路径的节点集合
+saved_path_sets = set()  # Used to record node sets of already saved paths
 
 with open('./rejoin_results/'+file, 'w', encoding='utf-8') as f:
     for i, path in enumerate(all_paths):
         if len(path) >= 2:
-            # 构造该路径的节点集合（只考虑路径上的所有节点，不考虑边方向）
+            # Construct a node set for the path (considering only nodes, not edge directions)
             node_set = frozenset([src for src, _, _ in path] + [path[-1][1]])
 
             if node_set in saved_path_sets:
-                continue  # 如果已经保存过了，跳过
+                continue 
 
-            saved_path_sets.add(node_set)  # 否则记录下来
+            saved_path_sets.add(node_set) 
             num += 1
 
             print(f"Path {num}:")
