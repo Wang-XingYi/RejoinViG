@@ -29,6 +29,10 @@ python results_evaluate.py
 ```
 python results_evaluate.py
 ```
+-Global Rejoining
+```
+python Global_Rejoin.py
+```
 -  Calculate parameters and MACs
 ```
 MAC_params.py
