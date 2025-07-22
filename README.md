@@ -29,7 +29,7 @@ python results_evaluate.py
 ```
 python results_evaluate.py
 ```
--Global Rejoining
+- Global Rejoining
 ```
 python Global_Rejoin.py
 ```
