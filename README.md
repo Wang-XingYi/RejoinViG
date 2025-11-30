@@ -45,9 +45,9 @@ python tools/Global_Rejoin.py
 python tools/MAC_params.py
 ```
 ### Dataset Creation
-```
 <details>
-
+<summary>Dataset Creation </summary>
+```
 │data/
 ├──01_fragImge.py
 │Through horizontal and vertical split curves, the bone stick images are divided into fragment images corresponding to top-bottom, bottom-top, left-right, and right-left rejoining.
