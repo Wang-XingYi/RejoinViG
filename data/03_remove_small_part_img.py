@@ -1,6 +1,6 @@
 """
 Some fragments obtained after horizontal splitting have very short matching edges.
-Images with such short edges should not be used for top-bottom rejoinable,
+Images with such short edges should not be used for top-bottom rejoining,
 so we need to remove them. The images marked for deletion are saved into a new folder.
 Later, we manually review these images to verify if any actually have relatively long edges.
 If they do, such images can be retained (i.e., removed from the deletion folder).
@@ -38,3 +38,4 @@ if __name__ == '__main__':
             cv2.imwrite(os.path.join(remove_path,img_name),img)
 
             print(f'Removed {img_name} : {distance}')
+
