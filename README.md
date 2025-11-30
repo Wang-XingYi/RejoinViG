@@ -44,9 +44,12 @@ python tools/Global_Rejoin.py
 ```
 python tools/MAC_params.py
 ```
+
 ### Dataset Creation
 <details>
 <summary>Dataset Creation </summary>
+
+
 ```
 │data/
 ├──01_fragImge.py
