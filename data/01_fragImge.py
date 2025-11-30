@@ -1,6 +1,6 @@
 """
 Through horizontal and vertical splitting curves, the bone stick images are divided into fragment images 
-corresponding to top-bottom, bottom-top, left-right, and right-left rejoinable.
+corresponding to top-bottom, bottom-top, left-right, and right-left rejoining.
 """
 
 import random
@@ -258,6 +258,7 @@ if __name__ == '__main__':
         if not os.path.exists(save_path):
             os.makedirs(save_path)
         main(image_path, save_path, img_name, log, bg_color, min_area_ratio)
+
 
 
 
