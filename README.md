@@ -32,20 +32,34 @@ python main.py
 ```
 python test.py
 ```
-- Calculate Top-K accuracy
+
+<details>
+<summary>Calculate Top-K accuracy </summary>
+
 ```
 python tools/results_evaluate.py
 ```
-- Global Rejoining
+
+</details>
+
+<details>
+<summary>Global rejoining </summary>
+
 ```
 python tools/Global_Rejoin.py
 ```
--  Calculate parameters and MACs
+
+</details>
+
+<details>
+<summary>Calculate parameters and MACs</summary>
+
 ```
 python tools/MAC_params.py
 ```
+</details>
 
-### Dataset Creation
+### Dataset
 <details>
 <summary>Dataset Creation </summary>
 
