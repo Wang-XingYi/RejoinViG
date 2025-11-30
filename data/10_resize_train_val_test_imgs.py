@@ -1,9 +1,11 @@
-import os
-from PIL import Image
-
 """
 Resize all images in the dataset (train, test, and validation) to 224×224 size.
 """
+
+import os
+from PIL import Image
+
+
 
 
 folders = {
@@ -35,3 +37,4 @@ for folder_name, folder_path in folders.items():
     print(f"Processing folder: {folder_name}")
     process_and_save_images(folder_path)
     print(f"Processed and saved: {folder_name}")
+
