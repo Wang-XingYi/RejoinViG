@@ -1,7 +1,7 @@
 # RejoinViG
 
 # Overview
-This repository contains the source code forRejoining Precious Artifacts: Efficiently Bone Stick Rejoining Based Massive Fragment Images by Contour, Script, and Texture
+This repository contains the source code for Rejoining Precious Artifacts: Efficiently Bone Stick Rejoining Based Massive Fragment Images by Contour, Script, and Texture
 ![image](https://github.com/Wang-XingYi/RejoinViG/blob/main/Images/network.jpg)
 
 ## News
@@ -30,19 +30,19 @@ python main.py
 ### Test RejoinViG:
 - Test
 ```
-python results_evaluate.py
+python test.py
 ```
 - Calculate Top-K accuracy
 ```
-python results_evaluate.py
+python tools/results_evaluate.py
 ```
 - Global Rejoining
 ```
-python Global_Rejoin.py
+python tools/Global_Rejoin.py
 ```
 -  Calculate parameters and MACs
 ```
-MAC_params.py
+python tools/MAC_params.py
 ```
 ### Dataset Creation
 ```
