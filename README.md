@@ -49,7 +49,6 @@ python tools/MAC_params.py
 <details>
 <summary>Dataset Creation </summary>
 
-
 ```
 │data/
 ├──01_fragImge.py
@@ -61,7 +60,11 @@ python tools/MAC_params.py
 ├──04_delet_small_dataset.py
 │Remove records from the generated rejoinable txt document that contain images with too short matching edges (for both top-bottom and bottom-top rejoining).
 ```
-- Dataset division
+</details>
+
+
+<details>
+<summary>Dataset division </summary>
 ```
 │data/
 ├──05_divide_dataset.py
@@ -69,7 +72,12 @@ python tools/MAC_params.py
 ├──10_resize_train_val_test_imgs.py
 │Resize all images in the dataset (train, test, and validation) to 224×224 size.
 ```
-- Generate the txt file for the dataset
+</details>
+
+
+<details>
+<summary>Generate the txt file for the dataset </summary>
+
 ```
 │data/
 ├──06_create_train_val_not_rejoin_txt.py
@@ -82,7 +90,11 @@ python tools/MAC_params.py
 │Generate txt files for test set
 ```
 
-- Dataset Structure
+</details>
+
+<details>
+<summary>Dataset structure </summary>
+
 ```
 │data/
 ├──Train/
