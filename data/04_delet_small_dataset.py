@@ -1,7 +1,7 @@
 import os
 """
 Remove records from the generated rejoinable txt document that contain images with too short matching edges 
-(for both top-bottom and bottom-top rejoining). Additionally, some segmented fragments have discontinuous 
+(for both top-bottom and bottom-top rejoining). Additionally, some split fragments have discontinuous 
 matching edges, and such images should not appear in the rejoinable txt file.
 
 """
@@ -61,3 +61,4 @@ if __name__ == '__main__':
         file.writelines(filtered_lines_2)
 
     print(f"删除后的文件已保存为 {output_file_path}")
+
