@@ -1,13 +1,15 @@
-import os
-import random
-
-import numpy as np
-import torch
 """
 Generate unrejoinable data for the training and validation set.
 Randomly select one image from each group (grouped by the part before "_" in the image name),
 and then randomly select one image from a other group to form a pair.
 """
+
+import os
+import random
+
+import numpy as np
+import torch
+
 
 def random_select_files(file_dict):
     result_list = []
@@ -69,6 +71,7 @@ if __name__ == '__main__':
     val_output_file = 'Val_labels_not_rejoining_log.txt'
     not_rejoin_txt(train_path,train_output_file)
     not_rejoin_txt(val_path,val_output_file)
+
 
 
 
