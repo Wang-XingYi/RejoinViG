@@ -128,3 +128,9 @@ python tools/MAC_params.py
 ├──Test_full.txt
 ```
 </details>
+
+## Acknowledgement
+Our work is built upon [GreedyViG](https://github.com/SLDGroup/GreedyViG).
+Thanks to the inspirations from [GreedyViG](https://github.com/SLDGroup/GreedyViG).
+
+✨ Feel free to contribute and reach out if you have any questions! ✨
