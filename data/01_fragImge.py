@@ -1,3 +1,8 @@
+"""
+Through horizontal and vertical splitting curves, the bone stick images are divided into fragment images 
+corresponding to top-bottom, bottom-top, left-right, and right-left rejoinable.
+"""
+
 import random
 import torch
 import numpy as np
@@ -5,10 +10,7 @@ import cv2
 import matplotlib.pyplot as plt
 import os
 
-"""
-Through horizontal and vertical split curves, the bone stick images are divided into fragment images 
-corresponding to top-bottom, bottom-top, left-right, and right-left rejoining.
-"""
+
 
 def generate_horizontal_curve(img_shape, previous_y=None, num_points=30, max_amplitude=10, slope_amplitude=0.1):
     """Generate a horizontal split curve to divide the image into top and bottom parts."""
@@ -256,6 +258,7 @@ if __name__ == '__main__':
         if not os.path.exists(save_path):
             os.makedirs(save_path)
         main(image_path, save_path, img_name, log, bg_color, min_area_ratio)
+
 
 
 
