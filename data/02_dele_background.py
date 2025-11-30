@@ -1,11 +1,13 @@
+"""
+Crop the splited bone sticks, resizing the 1200×1170 image to 800×800 to 
+remove a significant amount of background information.
+"""
+
 import os
 
 import cv2
 import numpy as np
-"""
-Crop the segmented bone sticks, resizing the 1200×1170 image to 800×800 to 
-remove a significant amount of background information.
-"""
+
 
 def center_crop_image(content_img, output_size=(800, 800), bg_color=(255, 255, 255), tolerance=5):
     h, w = content_img.shape[:2]
@@ -71,3 +73,4 @@ if __name__ == '__main__':
         # Save the processed image
         cv2.imwrite(os.path.join(save_path,img_name), result_img)
         print(img_name)
+
