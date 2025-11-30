@@ -4,6 +4,13 @@
 This repository contains the source code forRejoining Precious Artifacts: Efficiently Bone Stick Rejoining Based Massive Fragment Images by Contour, Script, and Texture
 ![image](https://github.com/Wang-XingYi/RejoinViG/blob/main/Images/network.jpg)
 
+## News
+
+[2025/11/8]: **RejoinViG** has been accepted by **AAAI 2026**. 🔥🔥🔥
+
+## 🚀 Updates
+[2025/11/8]: Update code of **RejoinViG**.
+
 # Usage
 
 ## Installation 
