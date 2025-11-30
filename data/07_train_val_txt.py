@@ -1,8 +1,10 @@
-import os
-import random
 """
 Generate txt files for train and validation set
 """
+
+import os
+import random
+
 def read_log_file(file_path):
     with open(file_path, 'r') as f:
         lines = f.readlines()
@@ -55,3 +57,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
