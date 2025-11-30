@@ -1,3 +1,7 @@
+"""
+Divide the dataset into training, test, and validation sets.
+"""
+
 import os
 import shutil
 import random
@@ -5,9 +9,7 @@ import random
 import numpy as np
 import torch
 
-"""
-Divide the dataset into training, test, and validation sets.
-"""
+
 def split_images_and_copy(source_folder, train_folder, test_folder, val_folder, image_extensions=('.jpg', '.png', '.bmp')):
 
     for folder in [train_folder, test_folder, val_folder]:
@@ -81,3 +83,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
