@@ -1,5 +1,5 @@
 """
-Crop the splited bone sticks, resizing the 1200×1170 image to 800×800 to 
+Crop the split bone sticks, resizing the 1200×1170 image to 800×800 to 
 remove a significant amount of background information.
 """
 
@@ -73,4 +73,5 @@ if __name__ == '__main__':
         # Save the processed image
         cv2.imwrite(os.path.join(save_path,img_name), result_img)
         print(img_name)
+
 
