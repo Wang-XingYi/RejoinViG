@@ -1,15 +1,17 @@
-import os
-
-import cv2
-import numpy as np
 """
 Some fragments obtained after horizontal splitting have very short matching edges.
-Images with such short edges should not be used for top-bottom rejoining,
+Images with such short edges should not be used for top-bottom rejoinable,
 so we need to remove them. The images marked for deletion are saved into a new folder.
 Later, we manually review these images to verify if any actually have relatively long edges.
 If they do, such images can be retained (i.e., removed from the deletion folder).
 
 """
+
+import os
+
+import cv2
+import numpy as np
+
 if __name__ == '__main__':
     # Source folder
     dir_path=r'../data/02-fragments-2_crop'
@@ -34,4 +36,5 @@ if __name__ == '__main__':
         distance=x_max-x_min
         if distance < 160:
             cv2.imwrite(os.path.join(remove_path,img_name),img)
+
             print(f'Removed {img_name} : {distance}')
