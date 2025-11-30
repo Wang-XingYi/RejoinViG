@@ -1,7 +1,8 @@
-import os
 """
 Generate unrejoinable data for the test set
 """
+import os
+
 if __name__ == '__main__':
     path=r'./Test'
     imgs=os.listdir(path)
@@ -10,4 +11,5 @@ if __name__ == '__main__':
         for j in range(len(imgs)):
             if imgs[i]!=imgs[j]:
                 f.write(f"{imgs[i]} {imgs[j]} 0 0 0 0 1\n")
+
 
