@@ -15,12 +15,17 @@ This repository contains the source code for Rejoining Precious Artifacts: Effic
 
 ## Installation 
 - Python 3.10.13
+- pytorch 2.1.1
+- torchvision 0.16.1
+<!--
 ```
 conda install pytorch==2.1.1 torchvision==0.16.1
 ```
+-->
 ```
 pip install -r requirements.txt
 ```
+
 
 ### Train RejoinViG:
 ```
