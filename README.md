@@ -88,14 +88,13 @@ python tools/MAC_params.py
 
 <details>
 <summary>Dataset division </summary>
-```
   
+```
 │data/
 ├──05_divide_dataset.py
 │Divide the dataset into training, test, and validation sets
 ├──10_resize_train_val_test_imgs.py
 │Resize all images in the dataset (train, test, and validation) to 224×224 size.
-
 ```
 </details>
 
@@ -104,7 +103,6 @@ python tools/MAC_params.py
 <summary>Generate the txt file for the dataset </summary>
 
 ```
-
 │data/
 ├──06_create_train_val_not_rejoin_txt.py
 │Generate unrejoinable data for the train and validation set. 
@@ -114,7 +112,6 @@ python tools/MAC_params.py
 │Generate unrejoinable data for the test set
 ├──09_creat_test_full_txt.py
 │Generate txt files for test set
-
 ```
 
 </details>
@@ -123,7 +120,6 @@ python tools/MAC_params.py
 <summary>Dataset structure </summary>
 
 ```
-
 │data/
 ├──Train/
 │  ├── 00001_1.bmp
@@ -140,8 +136,8 @@ python tools/MAC_params.py
 ├──Train.txt
 ├──Val.txt
 ├──Test_full.txt
-
 ```
+
 </details>
 
 ## Acknowledgement
