@@ -23,7 +23,9 @@ conda install pytorch==2.1.1 torchvision==0.16.1
 ```
 -->
 ```
+
 pip install -r requirements.txt
+
 ```
 
 
@@ -69,6 +71,7 @@ python tools/MAC_params.py
 <summary>Dataset Creation </summary>
 
 ```
+
 │data/
 ├──01_fragImge.py
 │Through horizontal and vertical split curves, the bone stick images are divided into fragment images corresponding to top-bottom, bottom-top, left-right, and right-left rejoining.
@@ -78,6 +81,7 @@ python tools/MAC_params.py
 │Some fragments obtained after horizontal splitting have very short matching edges. Images with such short edges should not be used for top-bottom rejoining, so we need to remove them.
 ├──04_delet_small_dataset.py
 │Remove records from the generated rejoinable txt document that contain images with too short matching edges (for both top-bottom and bottom-top rejoining).
+
 ```
 </details>
 
@@ -85,11 +89,13 @@ python tools/MAC_params.py
 <details>
 <summary>Dataset division </summary>
 ```
+  
 │data/
 ├──05_divide_dataset.py
 │Divide the dataset into training, test, and validation sets
 ├──10_resize_train_val_test_imgs.py
 │Resize all images in the dataset (train, test, and validation) to 224×224 size.
+
 ```
 </details>
 
@@ -98,6 +104,7 @@ python tools/MAC_params.py
 <summary>Generate the txt file for the dataset </summary>
 
 ```
+
 │data/
 ├──06_create_train_val_not_rejoin_txt.py
 │Generate unrejoinable data for the train and validation set. 
@@ -107,6 +114,7 @@ python tools/MAC_params.py
 │Generate unrejoinable data for the test set
 ├──09_creat_test_full_txt.py
 │Generate txt files for test set
+
 ```
 
 </details>
@@ -115,6 +123,7 @@ python tools/MAC_params.py
 <summary>Dataset structure </summary>
 
 ```
+
 │data/
 ├──Train/
 │  ├── 00001_1.bmp
@@ -131,6 +140,7 @@ python tools/MAC_params.py
 ├──Train.txt
 ├──Val.txt
 ├──Test_full.txt
+
 ```
 </details>
 
