@@ -93,7 +93,7 @@ def find(file,save_path):
     # constructing graph structure
     filter_map = defaultdict(list)
     for src, tgt, pre_class in edges:
-        if pre_class == 1 or pre_class == 2:
+        if pre_class == 1 or pre_class == 3:
             target_class = pre_class - 1
         else:
             target_class = pre_class + 1
